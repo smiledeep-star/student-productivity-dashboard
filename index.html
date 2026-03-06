@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>student-productivity-dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Student Productivity Dashboard</h1>
+        <h4>Plan your tasks. Track your learning. Stay consistent.</h4>
+        <nav>
+            <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#Schedule">Schedule</a></li>
+            <li><a href="#study log">Study log</a></li>
+            <li><a href="#Progress">Progress</a></li>
+            <li><a href="#notes">Quick Notes</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <br>
+    </header>
+    <main>
+        <section>
+            <h3 id="dashboard">Dashboard Overview</h3>
+            <article>
+                <p><i>Welcome back, Smiledeep.</i></p>
+                <p>
+                  Tasks Completed Today: 3<br>
+                  Tasks Remaining Today: 2<br>
+                  Study Time Today: 2 hours<br>
+                  Current Study Streak: 4 days  
+                </p>
+            </article><br>
+            <h4>Student profile</h4>
+            <article>
+                    <image src="images/smile1.jpeg"
+                    alt="Image of smiledeep"
+                    height="100"/><br>
+                    Name: Smiledeep Kaur<br>
+                    Program: B.Tech Mechanical Engineering<br>
+                    University: NIT Bhopal<br>
+                    Year: First year<br>
+                    <h4>Learning focus:</h4>
+                    <ul>
+                        <li>Frontend Web Development</li>
+                        <li>Programming Fundamentals</li>
+                        <li>Engineering Concepts</li>
+                        <li>Building Projects for GitHub</li>
+                    </ul><hr>
+                
+                
+            </article>
+        </section>
+        <section>
+            <h3>Today's Tasks</h3>
+            <article id="tasks">
+                <h4>Manage your daily tasks.</h4><br>
+                
+                <input type="checkbox" id="task-201" name="tasks" value="Review HTML semantic tags">
+                <label for="task-201">Review HTML semantic tags</label><br>
+                
+                <input type="checkbox" id="task-202" name="tasks" value="Read documentation about CSS basics">
+                <label for="task-202">Read documentation about CSS basics</label><br>
+                
+                <input type="checkbox" id="task-203" name="tasks" value="Update Github with latest project changes">
+                <label for="task-203">Update Github with latest project changes</label><br>
+                
+                <input type="checkbox" id="task-204" name="tasks" value="Review physics lecture notes">
+                <label for="task-204">Review physics lecture notes</label><br>
+                <input type="checkbox" id="task-205" name="tasks" value="Practice programming problems">
+                <label for="task-205">Practice programming problems</label><br>
+                <input type="checkbox" id="task-206" name="tasks" value="Complete assignment1 of BEEE">
+                <label for="task-206">Complete assignment1 of BEEE</label><br>
+
+            </article>
+            <br>
+        </section>
+        <section>
+            <h4>Add New Task</h4>
+            <form action="/newtask.php" method="post">
+           
+                <label for="task title">Task title:</label>
+                <input type="text" id="task title" name="task title"><br>
+                <label for="priority level">Select Priority level:</label>
+                <select name="priority level" id="priority level">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+                </select><br><br>
+                <button type="submit" >Add task</button>
+                </form>
+                <p><b>Note</b> :This feature will allow users to add tasks dynamically once JavaScript functionality is implemented.</p><hr>
+
+
+            
+        </section>
+        <section>
+            <h3>Weekly Study Schedule</h3>
+
+        </section>
+        <section>
+            <article id="Schedule">
+            <h4>Plan your weekly study sessions.</h4>
+            <table border="1" >
+                <tr>
+                    <th>Day</th>
+                    <th>Subject</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Web Development</td>
+                    <td>7-9PM</td>
+                    <form action="/submit.php" method="post">
+                    <td><select name="tasktrack" id="104">
+                        <option value="Pending">Pending</option>
+                        <option value="Completeted">Completed</option></form></td>
+
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Programming Practice</td>
+                    <td>7-9PM</td>
+                    <form action="/submit.php" method="post">
+                    <td><select name="tasktrack" id="105">
+                        <option value="Pending">Pending</option>
+                        <option value="Completeted">Completed</option></form></td>
+
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Engineering Mechanics</td>
+                    <td>6-8PM</td>
+                    <form action="/submit.php" method="post">
+                    <td><select name="tasktrack" id="106">
+                        <option value="Pending">Pending</option>
+                        <option value="Completeted">Completed</option></form></td>
+
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Data Structures</td>
+                    <td>7-9PM</td>
+                    <form action="/submit.php" method="post">
+                    <td><select name="tasktrack" id="107">
+                        <option value="Pending">Pending</option>
+                        <option value="Completeted">Completed</option></form></td>
+
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Revision & Practice </td>
+                    <td>6-8PM</td>
+                    <form action="/submit.php" method="post">
+                    <td><select name="tasktrack" id="108">
+                        <option value="Pending">Pending</option>
+                        <option value="Completeted">Completed</option></form></td>
+
+                    
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Project Development </td>
+                    <td>5-8PM</td>
+                    <form action="/submit.php" method="post">
+                    <td><select name="tasktrack" id="109">
+                        <option value="Pending">Pending</option>
+                        <option value="Completeted">Completed</option></form></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Weekly review </td>
+                    <td>6-7PM</td>
+                    <form action="/submit.php" method="post">
+                    <td><select name="tasktrack" id="110">
+                        <option value="Pending">Pending</option>
+                        <option value="Completeted">Completed</option></form></td>
+                </tr>
+            </table>
+            <hr>
+            </article>
+        </section>
+        <section>
+            <h3>Study Log</h3>
+            <article id="study log">
+                Record your study sessions to track time spent learning.
+                <form action="/submit.php" method="post">
+                <label for="301">Subject:</label>
+                <input type="text" name="subject" id="301" placeholder="subject"><br>
+                <label for="302">Study duration(minutes):</label>
+                <input type="number" name="study duration(minutes)" id="302" min="0" step="1" placeholder="minutes"><br>
+                <label for="303">Date:</label>
+                <input type="date" name="date" id="303"><br><br>
+                <button type="submit">Add study session</button>
+                </form>
+            </article>
+        </section><hr>
+        <section>
+            <article>
+            <h3 id="Progress">Learning Progress</h3><br>
+            <b>Frontend Development</b><br>
+            <label for="html-progress">HTML</label>
+            <input type="range" id="html-progress" min="0" max="100" value="20"><br>
+            <label for="css-progress">CSS</label>
+            <input type="range" id="css-progress" min="0" max="100" value="60"><br>
+            <label for="javascript-progress">Javascript</label>
+            <input type="range" id="javascript-progress" min="0" max="100" value="100"><br>
+            </article>
+            <br>
+            <article>
+                <b>Programming practice</b><br>
+                <label for="programm-progress">C programming</label>
+            <input type="range" id="programm-progress" min="0" max="100" value="23"><br>
+            <label for="python-progress">Python</label>
+            <input type="range" id="python-progress" min="0" max="100" value="46"><br>
+            <label for="c++ progress">C++</label>
+            <input type="range" id="c++ progress" min="0" max="100" value="0"><br>
+            <br>
+            </article>
+            <article>
+                <b>Engineering subjects</b><br>
+                <label for="enggmechanics-progress">Engineering Mechanics</label>
+            <input type="range" id="enggmechanics-progress" min="0" max="100" value="88"><br>
+            <label for="mathematics-progress">Mathematics</label>
+            <input type="range" id="mathematics-progress" min="0" max="100" value="69"><br>
+            <label for="physics-progress">Physics</label>
+            <input type="range" id="physics-progress" min="0" max="100" value="2"><br>
+            <br>
+            </article><hr>
+        </section>
+        <section>
+            <h3>Quick Notes</h3>
+            <artcile id="notes">
+            <form action="/submit.php" method="post">
+                <textarea name="Quick notes"  row="4" column="30" placeholder="Save quick study reminders or important ideas."></textarea>
+            </form><hr>
+            </artcile>
+        </section>
+        <section>
+            <h3>Daily Motivation</h3>
+            <article>
+            "Success is built on the discipline of showing up every day."
+            </article>
+        </section><hr>
+        <section>
+            <h3 >Contact/Feedback</h3>
+            <article id="contact">
+                Have suggestions for improving this dashboard?
+            </article>
+            <form action="/submit.php" method="post">
+                <label for="401">Name:</label>
+                <input type="text" id="401" name="name" placeholder="enter your name"><br>
+                <label for="402">Email:</label>
+                <input type="email" id="402" name="email"><br>
+                <label for="403">Message type:</label>
+                <select id="403" name="message type">
+                    <option value="Feedback">Feedback</option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="Collaboration">Collaboration</option>
+                    <option value="Others">Others</option>
+                </select><br><br>
+                <textarea row="10" column="60" id="410" placeholder="type your message here."></textarea><br>
+                <button type="submit">Send message</button>
+
+            </form><hr>
+        </section>
+
+
+    </main>
+    <footer>
+        <b>© 2026 Student Productivity Dashboard.</b><br>
+        Helping students stay organized and productive.<br><br>
+        Links:<br>
+        <a href="https://www.linkedin.com/in/smiledeep-kaur-6467303ab/" target="blank">LinkedIn</a><br>
+        Email:smiledeepk5@gmail.com
+    </footer>
+    
+</body>
+</html>
