@@ -1,2 +1,5 @@
-# student-productivity-dashboard
-A student productivity dashboard built using HTML to organize tasks, schedules, and study resources. This project will be enhanced later with CSS and JavaScript.
+# Student Productivity Dashboard
+
+This project is a productivity dashboard designed for students to organize their tasks, schedules, and study resources.
+
+The project is currently built using HTML and will later be improved with CSS for styling and JavaScript for interactivity.
